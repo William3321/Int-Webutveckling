@@ -1,0 +1,17 @@
+body {
+    margin-top: 300px;
+    content: flex;
+    text-align: center;
+    background-color: rgb(60, 60, 60)
+}
+
+#headerText {
+    color: rgb(34, 255, 0);
+}
+
+#changeTextButton {
+    border-radius: 4px;
+    font-size: 20px;
+    color: rgb(34, 255, 0);
+    background: rgb(122, 122, 122);
+}
