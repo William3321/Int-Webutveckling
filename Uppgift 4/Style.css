@@ -18,7 +18,7 @@ body{
     max-width: 440px;
     background: #fff;
     margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 40px 30px 40px;
     border-radius: 10px;
 }
 
@@ -26,7 +26,7 @@ body{
     color: black;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 input{
@@ -97,4 +97,9 @@ ul li span{
 
 ul li span:hover{
     color: rgb(255, 0, 0);
+}
+
+#Counter-Results{
+    display: flex;
+    gap: 7px;
 }

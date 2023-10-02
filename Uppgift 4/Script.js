@@ -1,6 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-let taskCounter = document.getElementById("counter");
+const counter = document.getElementById("Counter");
 
 
 function addTask(){
@@ -22,10 +22,12 @@ function addTask(){
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
+        countCompletedTasks()
         saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        countCompletedTasks()
         saveData();
     }
 }, false);
@@ -37,10 +39,14 @@ function saveData(){
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
-showTask()
 
-let Counter = 0
-span.addEventListener('click', function(){
-    Counter++
-    document.querySelector("#counter").innerHTML = Counter
-})
+function countCompletedTasks() {
+    const checkedTasks = document.querySelectorAll('.checked');
+    counter.textContent = checkedTasks.length; // Update the counter with the count of completed tasks
+}
+
+showTask()
+countCompletedTasks()
+
+
+
