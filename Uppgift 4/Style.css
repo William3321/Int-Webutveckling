@@ -13,7 +13,11 @@ body{
 }
 
 .todo-app{
-    
+    /*  */
+    animation: fadeInFromAboveAndBounce 0.7s ease-out;
+
+
+    /* css från tidigare */
     width: 100%;
     max-width: 440px;
     background: #fff;
@@ -22,11 +26,13 @@ body{
     border-radius: 10px;
 }
 
+
+
 .todo-app h1{
     color: black;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 input{
@@ -58,6 +64,7 @@ ul li::before{
 
 ul li.checked {
     text-decoration: line-through;
+    color: gray;
 }
 ul li.checked::before{
     background-image: url(Images/checked.png);
@@ -81,7 +88,6 @@ img{
     align-items: center;
     border-radius: 30px;
     padding-left: 20px;
-    margin-bottom: 25px;
 }
 
 ul li span{
@@ -101,5 +107,64 @@ ul li span:hover{
 
 #Counter-Results{
     display: flex;
+    align-content: center;
+    flex-wrap: wrap;
     gap: 7px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+li {
+    animation: fadeInFromBelow 0.4s ease-in-out;
+    transition: color 0.3s ease;
+    
+}
+
+#Errormessage {
+    margin-left: 20px;
+    display: none;
+    color: red;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* FadeIn för LI */
+@keyframes fadeInFromBelow {
+from {
+    opacity: 0;
+    transform: translateY(5px); 
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+/* FadeIn för "hela" sidan */
+@keyframes fadeInFromAboveAndBounce {
+0% {
+    opacity: 0;
+    transform: translateY(-400px); 
+}
+60% {
+    opacity: 1;
+    transform: translateY(50px); 
+}
+100% {
+    transform: translateY(0); 
+}
+}
+
+/* Fadein för "errorMessage" */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+

@@ -1,13 +1,15 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const counter = document.getElementById("Counter");
+const errorMessage = document.getElementById("Errormessage");
 
-
-function addTask(){
-    if(inputBox.value === ''){
-        alert("You need to enter something");
-    }
-    else{
+function addTask() {
+    if (inputBox.value.trim() === "") {
+        errorMessage.style.display = "block";
+        errorMessage.style.opacity = 1;
+    } else {
+        errorMessage.style.opacity = 0;
+        errorMessage.style.display = "none";
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
@@ -42,7 +44,7 @@ function showTask(){
 
 function countCompletedTasks() {
     const checkedTasks = document.querySelectorAll('.checked');
-    counter.textContent = checkedTasks.length; // Update the counter with the count of completed tasks
+    counter.textContent = checkedTasks.length; 
 }
 
 showTask()
