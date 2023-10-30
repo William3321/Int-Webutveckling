@@ -6,12 +6,6 @@ body{
     background-color: darkgray;
 }
 
-.container{
-    width: 100%;
-    min-width: 100vh;
-    padding: 10px;
-}
-
 .todo-app{
     /*  */
     animation: fadeInFromAboveAndBounce 0.7s ease-out;
