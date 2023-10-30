@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 128px;
+    height: 82px;
+}
+
+header {
+    background-color: #011827;
+    color: #fff;
+    line-height: 1.2;
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+.top-bar {
+    overflow-x: auto;
+    width: auto;
+}
+
+.hackerimg {
+    width: 100%;
+    height: 50%;
+}
+
+.roomsimg {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.intro-text {
+    padding-bottom: 9px;
+}
+
+.navbar {
+    background-color: #011827;
+    color: #fff;
+    height: 90px;
+}
+
+.navbar ul {
+    display: flex;
+    font-size: 23px; 
+    gap: 200px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #8ACFE5;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.buttons {
+    padding: 20px 40px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#btn1 {
+    background-color: #e3170a;
+    position: absolute;
+    color: #fff;  
+    right: 51%;
+    top: 95%;
+}
+
+#btn2 {
+    background-color: #8ACFE5;
+    position: absolute;
+    color: black; 
+    left: 51%;
+    top: 95%;
+}
+
+#btn3 {
+    background-color: #e3170a;
+    color: #fff;  
+
+}
+
+#btn4 {
+    background-color: #8ACFE5;
+    color: black; 
+}
+
+.roombtn {
+    cursor: pointer;
+    float: right;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 15px 35px 15px;
+    border-radius: 3px;
+    margin-top: 33px;
+}
+
+.bottom-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 35px;
+}
+
+.middle-container {
+    position: relative;
+    text-align: center;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    width: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 5%;
+}
+
+#room-title {
+    padding-top: 8%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.pop-rooms {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    gap: 10px;
+}
+
+.rooms {
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px 0.5px;
+    width: 363px;
+    height: 446px;  
+    border-radius: 5px;
+}
+
+.checked {
+    color: red;
+}
+
+
+.party {
+    float: right;
+    font-size: 15px;
+
+}
+
+.room-info {
+    margin-top: 10px;
+    max-height: 56px;
+}
+
+.all-rooms {
+    margin: 10px;
+}
+
+.middle-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    width: 100%;
+    height: 400px;
+    background-color: #011827;
+    color: white;
+    margin-top: 5%;
+    
+}
+
+.middle-p {
+    max-width: 700px;
+    grid-row: auto;
+    text-align: center;
+}
+
+#middle-btn {
+    color: #8ACFE5;
+    background-color: #011827;
+    border: 2px solid #8ACFE5;
+    padding: 15px 35px 15px;
+    border-radius: 3px;
+    margin-top: 33px;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.middle-header {
+    font-size: 50px;
+    
+}
+
+.middle-info-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 25%;
+    max-width: 900px;
+}
+
+.middle-info-p {
+    width: 50%;
+    height: 50%;
+}
+
+.middleimg {
+    width: 50%;
+    height: 50%;
+}
+
+#info-btn {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+}
+
+.middle-info-text-p {
+    font-size: 30px;
+}
+
+.footer-nav {
+    color: black;
+}
+
+
+@media only screen and (max-width: 1070px) {
+    .navbar {
+    display: none;
+    }      
+    .intro-text {
+        font-size: 20px;
+        width: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .hackerimg {
+        width: 100%;
+        height: 50%;
+    }
+    header{
+        font-size: 22px;
+        padding-bottom: 25px;
+        padding-top: 1%;
+        padding-left: 1%;
+        gap: 0;
+    }
+}
+
